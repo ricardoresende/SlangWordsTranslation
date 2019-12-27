@@ -8,6 +8,9 @@ This script search and replace slang words based in the postgres database.
 
 ### Database Structure
 
+```sql
+// code away!
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
@@ -232,4 +235,6 @@ ALTER TABLE ONLY public.termoversionamento
 
 ALTER TABLE ONLY public.postagem
     ADD CONSTRAINT "pfClassificacaoCube" FOREIGN KEY (idclassificacao) REFERENCES public.classificacaocubo(idclassificacao) ON UPDATE RESTRICT ON DELETE RESTRICT;
+
+```
 
